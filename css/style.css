@@ -1,0 +1,64 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+header {
+  height: 60px;
+  background: red;
+  padding: 2px 20px; /*in questo modo indico col primo dato "alto e basso" invece il secondo "destra e sinistra"*/
+  /* clearfix */
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;/* {flex-star(sinistra), center, flex-end(destra)}spostamento orizzonatale*/
+  align-items: flex-end;  /* {flex-star(in alto), center, flex-end(in basso)}spostamento verticale*/
+}
+nav a{
+  margin-right: 20px;
+  color: white;
+  font-family: fantasy;
+  text-decoration: none; /*non avere decorazioni nel testo, la sottolineatura*/
+  text-transform: uppercase; /*avere tutte le scritte in maiuscolo*/ 
+  transition: color 300ms ease-in-out;
+}
+nav a:hover {
+  color: black;
+}
+.logo {
+  height: 45px;
+  float: left;
+}
+.logoUtente {
+  height: 50px;
+  float: right;
+}
+main {
+   height: calc(100% - 110px);
+}
+section {
+  background: white;
+  height: 100%;
+  width: 70%;
+  float: left;
+}
+aside {
+  background: white;
+  height: 100%;
+  width: 30%;
+  float: right;
+}
+.menu-categorie {
+  list-style-type: none;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  background: black;
+  clear: both;
+}
+
+*{
+  box-sizing: border-box;
+}
+
